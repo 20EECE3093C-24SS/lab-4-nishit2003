@@ -1,7 +1,7 @@
 # TODO-1: add convert_to_letter_grade(score) function
 
 def convert_to_letter_grade(score):
-   """
+    """
     Converts a student's numerical score into a corresponding letter grade.
 
     Args:
@@ -14,7 +14,6 @@ def convert_to_letter_grade(score):
         ValueError: If the input score is outside the range of 0 to 100.
         TypeError: If the input score is not an int or float.
     """
-   
     # Check if the input score is a numeric value
     if not isinstance(score, (int, float)):
         raise TypeError("Score must be a numeric value.")
