@@ -20,7 +20,7 @@ def convert_to_letter_grade(score):
 
     # Check if the input score is within the range of 0 to 100
     if score < 0 or score > 100:
-         raise ValueError("Invalid input. Please enter a number between 0 and 100.")
+         raise ValueError("Score must be between 0 and 100.")
 
     # Convert score to letter grade based on predefined ranges
     if score >= 90:
