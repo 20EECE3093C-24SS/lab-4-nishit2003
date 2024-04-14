@@ -3,10 +3,8 @@ run-name: ${{ github.actor }} - Unit Test
 on: 
   push:
     branches:
-      # - TODO-1
       - 'main'
     tags-ignore:
-      # - TODO-2
       - '*'
 jobs:
   test:
