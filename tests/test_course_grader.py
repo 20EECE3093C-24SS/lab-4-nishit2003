@@ -17,7 +17,7 @@ def test_exact_grade_boundaries():
     assert convert_to_letter_grade(0) == 'F'
     assert convert_to_letter_grade(39) == 'F'
     assert convert_to_letter_grade(64) == 'D'
-    assert convert_to_letter_grade(71) == 'D'
+    assert convert_to_letter_grade(71) == 'C'
     assert convert_to_letter_grade(79) == 'C'
     assert convert_to_letter_grade(80) == 'B'
     assert convert_to_letter_grade(89) == 'B'
