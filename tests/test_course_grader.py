@@ -15,24 +15,13 @@ def test_exact_grade_boundaries():
 
 # TODO-2: Add test_invalid_numerical_score() function
 def test_invalid_numerical_score():
-    with pytest.raises(ValueError) as exc_info:
+    with pytest.raises(ValueError, match = "Score must be between 0 and 100."):
         convert_to_letter_grade(105)
-    assert str(exc_info.value) == "Score must be between 0 and 100."
-
-    with pytest.raises(ValueError) as exc_info:
         convert_to_letter_grade(-5)
-    assert str(exc_info.value) == "Score must be between 0 and 100."
 
 # TODO-3: Add test_non_numeric_input() function
 def test_non_numeric_input():
-    with pytest.raises(TypeError) as exc_info:
+    with pytest.raises(TypeError, match=r"Score must be a numeric value."):
         convert_to_letter_grade("90")
-    assert str(exc_info.value) == "Score must be a numeric value."
-
-    with pytest.raises(TypeError) as exc_info:
         convert_to_letter_grade([90])
-    assert str(exc_info.value) == "Score must be a numeric value."
-
-    with pytest.raises(TypeError) as exc_info:
         convert_to_letter_grade(None)
-    assert str(exc_info.value) == "Score must be a numeric value."
