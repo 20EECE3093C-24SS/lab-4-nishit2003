@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} - Docs
 on:
   push:
     tags:
-      - 'v1.0.0'                                       
+      - 'v*.*.*'                                       
 jobs:
   build-docs:
     runs-on: ubuntu-latest
